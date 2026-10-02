@@ -2,6 +2,12 @@
 
 > **"Connect Problems. Coordinate Solutions."**
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/jdj39581-cpu/nexus-civic-platform)
+
+- **GitHub Repository**: [https://github.com/jdj39581-cpu/nexus-civic-platform](https://github.com/jdj39581-cpu/nexus-civic-platform)
+- **1-Click Render Deploy**: [https://render.com/deploy?repo=https://github.com/jdj39581-cpu/nexus-civic-platform](https://render.com/deploy?repo=https://github.com/jdj39581-cpu/nexus-civic-platform)
+- **Live Render URL**: `https://nexus-civic-platform.onrender.com`
+
 NEXUS is an intelligent, full-stack community problem reporting and resolution platform engineered for municipal authorities, smart campuses, and civic organizations. Rather than functioning as a simplistic CRUD ticketing board, NEXUS implements an autonomous intelligence pipeline:
 
 ```
