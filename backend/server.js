@@ -56,11 +56,11 @@ const clientDistPath = path.resolve(__dirname, '..', 'frontend', 'dist');
 if (fs.existsSync(clientDistPath)) {
   console.log('[NEXUS Server] Serving frontend production build from:', clientDistPath);
   app.use(express.static(clientDistPath));
-  app.get('*', (req, res, next) => {
-    if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) {
-      return next();
+  app.use((req, res, next) => {
+    if (req.method === 'GET' && !req.path.startsWith('/api') && !req.path.startsWith('/uploads')) {
+      return res.sendFile(path.join(clientDistPath, 'index.html'));
     }
-    res.sendFile(path.join(clientDistPath, 'index.html'));
+    next();
   });
 }
 
